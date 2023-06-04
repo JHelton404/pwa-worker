@@ -14,7 +14,6 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
@@ -45,7 +44,6 @@ module.exports = () => {
         ]
       })
     ],
-
     module: {
       rules: [
         {
@@ -55,7 +53,6 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
