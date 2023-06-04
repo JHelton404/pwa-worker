@@ -15,7 +15,7 @@ const initdb = async () =>
   });
 
 export const putDb = async (content) => {
-  // const textDb = await openDB(DB_NAME, 1);
+  const textDb = await openDB(DB_NAME, 1);
   
   const openDb = await openDB(DB_NAME, 1);
 
@@ -29,7 +29,7 @@ export const putDb = async (content) => {
 };
 
 export const getDb = async () => {
-  // const textDb = await openDB(DB_NAME, 1);
+  const textDb = await openDB(DB_NAME, 1);
   
   const openDb = await openDB(DB_NAME, 1);
 
